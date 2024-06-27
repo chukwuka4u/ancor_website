@@ -16,7 +16,7 @@ const metadata = {
 
 export default function RootLayout({ children }) {
 
-  const list = ["/", "/about_us", "/projects", "/contact"];
+  const list = ["/", "/about_us", "/our_services", "/contact"];
 
   return (
     <html lang="en">
@@ -35,11 +35,11 @@ export default function RootLayout({ children }) {
               {/*destop menu */}
               <div className="flex justify-between items-center w-[50%] max-md:hidden">
                 <Link
-                  href="/" className="hover:bg-slate-200 focus:ring-2 focus:ring-slate-500"
+                  href="/" className="hover:bg-slate-200 focus:ring-2 focus:ring-default"
                 ><div>Home</div></Link>
-                <Link href={"/about_us"} className="hover:bg-slate-200 focus:ring-2 focus:ring-slate-500"><div>About Us</div></Link>
-                <Link href="/projects" className="hover:bg-slate-200 focus:ring-2 focus:ring-slate-500"><div>Projects</div></Link>
-                <Link href="/contact" className="hover:bg-slate-200 focus:ring-2 focus:ring-slate-500"><div>Contact</div></Link>
+                <Link href={"/about_us"} className="hover:bg-slate-200 focus:ring-2 focus:ring-default"><div>About Us</div></Link>
+                <Link href="/our_services" className="hover:bg-slate-200 focus:ring-2 focus:ring-default"><div>Our Services</div></Link>
+                <Link href="/contact" className="hover:bg-slate-200 focus:ring-2 focus:ring-default"><div>Contact</div></Link>
               </div>
         </div>
         {children}

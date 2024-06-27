@@ -1,9 +1,6 @@
 "use client"
 import Image from "next/image"
-import tes_avatar from "../assets/avatar.png"
-import tes_avatar1 from "../assets/avatar1.png"
-import tes_avatar2 from "../assets/avatar2.png"
-import tes_avatar3 from "../assets/avatar3.png"
+import profile from "../assets/profile.jpg"
 
 var $ = require('jquery');
 import image from "../assets/development.png"
@@ -33,7 +30,7 @@ const OwlCarousel = dynamic(() => import('react-owl-carousel'), {
           <div className="flex flex-col justify-between h-[250px] w-[400px] py-[10px]">
               <div className="flex gap-8 items-center h-[65px]">
                   <Image 
-                    src={tes_avatar}
+                    src={profile}
                     width={62}
                     height={62}
                     className="w-[62px] h-[62px] object-contain round"
@@ -50,7 +47,7 @@ const OwlCarousel = dynamic(() => import('react-owl-carousel'), {
           <div className="flex flex-col justify-between h-[250px] w-[400px] py-[10px]">
               <div className="flex gap-8 items-center h-[65px]">
                   <Image 
-                    src={tes_avatar1}
+                    src={profile}
                     width={62}
                     height={62}
                     className="w-[62px] h-[62px] object-contain round"
@@ -67,7 +64,7 @@ const OwlCarousel = dynamic(() => import('react-owl-carousel'), {
           <div className="flex flex-col justify-between h-[250px] w-[400px] py-[10px]">
               <div className="flex gap-8 items-center h-[65px]">
                   <Image 
-                    src={tes_avatar2}
+                    src={profile}
                     width={62}
                     height={62}
                     className="w-[62px] h-[62px] object-contain round"
@@ -84,7 +81,7 @@ const OwlCarousel = dynamic(() => import('react-owl-carousel'), {
           <div className="flex flex-col justify-between h-[250px] w-[400px] py-[10px]">
               <div className="flex gap-8 items-center h-[65px]">
                   <Image 
-                    src={tes_avatar3}
+                    src={profile}
                     width={62}
                     height={62}
                     className="w-[62px] h-[62px] object-contain round"

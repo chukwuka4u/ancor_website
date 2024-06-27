@@ -21,10 +21,7 @@ import twitter from "./assets/twitter.png"
 import instagram from "./assets/instagram.png"
 import frame_132 from "./assets/frame_132.png"
 import frame_133 from "./assets/frame_133.png"
-import tes_avatar from "./assets/avatar.png"
-import tes_avatar1 from "./assets/avatar1.png"
-import tes_avatar2 from "./assets/avatar2.png"
-import tes_avatar3 from "./assets/avatar3.png"
+import profile from "./assets/profile.jpg"
 import Slider from "./utils/carousel.jsx";
 
 export default function Home() {
@@ -32,7 +29,7 @@ export default function Home() {
     <main className="select-none">
       
       <div className="w-full h-screen">
-        <div className="w-1/3 h-1/2 bg-slate-500 absolute top-0 right-0 mt-[50px] -z-20 lg:w-[300px] lg:h-[280px] lg:left-[10%]"></div>
+        <div className="w-1/3 h-1/2 bg-default absolute top-0 right-0 mt-[50px] -z-20 lg:w-[300px] lg:h-[280px] lg:left-[10%]"></div>
         <Image
           src={firstSectionImage}
           width={100}
@@ -48,12 +45,12 @@ export default function Home() {
         />
         <div className="z-40 lg:pt-20">
         <h1 className="text-[64px] text-center text-wrap tracking-tight mx-10 mt-12">We help <br className="lg:hidden"/> you <br className="lg:hidden"/> <span className="italic font-semibold">accomplish</span><br/> your <br className="lg:hidden"/> marketing <br className="lg:hidden"/><span className="italic font-semibold">goals</span></h1>
-        <Button />
+        <Button link={"/our_services"}/> 
         </div>
       </div>
 
       <div className="mt-10 bg-black lg:flex pb-3 lg:flex-row lg:justify-between lg:my-[15%] lg:ml-[10%] lg:h-[50%]">
-        <div className="w-full h-[70px] bg-slate-500 lg:w-[230px] lg:h-[50%]" ></div>
+        <div className="w-full h-[70px] bg-default lg:w-[230px] lg:h-[50%]" ></div>
         <Image 
             src={secondSectionImage}
             width={500}
@@ -62,23 +59,23 @@ export default function Home() {
           />
           <div>
         <div className=" flex flex-row pt-10 px-3">
-          <div className="flex flex-row mr-2 pt-4"><div className="h-1 w-[50px] bg-slate-500"></div><div className="h-1 w-[20px] bg-white"></div></div>
+          <div className="flex flex-row mr-2 pt-4"><div className="h-1 w-[50px] bg-default"></div><div className="h-1 w-[20px] bg-white"></div></div>
           <h1 className="font-mono tracking-loose text-white text-[25px] ml-10 pb-5">OUR GOALS</h1>
         </div>
         <p className="text-white text-[20px] mx-3">
           To help our clients gain competitive advantage by using the power of social media to
           reach more potential customers increasing customer reach and brand awareness
         </p>
-        <Button />
+        <Button link={"/about_us"}/>
           </div>
       {/*desktop view piece of ui */}
       
-      <div className="bg-slate-500 lg:w-[150px] lg:h-auto" ></div>
+      <div className="bg-default lg:w-[150px] lg:h-auto" ></div>
       </div>
       <div className="lg:flex p-auto">
       <div className="h-[400px] bg-white px-3">
       <div className=" flex flex-row pt-10 px-3">
-          <div className="flex flex-row mr-2 pt-4"><div className="h-1 w-[50px] bg-slate-500"></div><div className="h-1 w-[20px] bg-black"></div></div>
+          <div className="flex flex-row mr-2 pt-4"><div className="h-1 w-[50px] bg-default"></div><div className="h-1 w-[20px] bg-black"></div></div>
           <h1 className="font-mono tracking-loose text-[25px] ml-10 pb-5">OUR SERVICES</h1>
         </div>
         <h1 className="text-[40px]">The leading experts in marketing today</h1>
@@ -217,11 +214,11 @@ export default function Home() {
         />
         <div className="md:flex md:justify-between md:mx-5">
          <div className="md:flex md:flex-col md:items-center md:justify-center">
-          <h1 className="text-[50px] font-mono font-light text-slate-500">34</h1>
+          <h1 className="text-[50px] font-mono font-light text-default">34</h1>
           <h1 className="text-[16px] font-mono font-medium">CLIENTS</h1>
          </div>
           <div className="max-md:hidden flex justify-between">
-            <div className="w-1 h-full bg-slate-500"></div>
+            <div className="w-1 h-full bg-default"></div>
             <p>
               We help a wide variety of clients across various sectors mainly in fashion and ecommerce across the globe
             </p>
@@ -229,27 +226,27 @@ export default function Home() {
         </div>
         <div className=" md:flex md:justify-between md:mx-5">
          <div className="md:flex md:flex-col md:items-center md:justify-center">
-          <h1 className="text-[50px] font-mono font-light text-slate-500">23</h1>
+          <h1 className="text-[50px] font-mono font-light text-default">23</h1>
           <h1 className="text-[16px] font-mono font-medium">DEALS</h1>
          </div>
          <div className="max-md:hidden flex justify-between">
-            <div className="w-1 h-full bg-slate-500"></div>
+            <div className="w-1 h-full bg-default"></div>
             <p>We deal fairly with our clients and highly value communication to ensure that you keep doing business with us</p>
           </div>
         </div>
         <div className=" md:flex md:justify-between md:mx-5">
          <div className="md:flex md:flex-col md:items-center md:justify-center">
-          <h1 className="text-[50px] font-mono font-light text-slate-500">58</h1>
+          <h1 className="text-[50px] font-mono font-light text-default">58</h1>
           <h1 className="text-[16px] font-mono font-medium">SITES</h1>
          </div>
          <div className="max-md:hidden flex justify-between">
-            <div className="w-1 h-full bg-slate-500"></div>
+            <div className="w-1 h-full bg-default"></div>
             <p>We have helped businesses build landing websites and software products mainly ecommerce stores in different countries.</p>
           </div>
         </div>
        
       </div>
-      <div className="max-md:hidden bg-slate-500 text-white w-[844px] h-[744px] flex flex-col justify-between">
+      <div className="max-md:hidden bg-default text-white w-[844px] h-[744px] flex flex-col justify-between">
         <h1 className="font-extralight text-[40px] px-3">Let us ancor your business</h1>
         <p className="font-light text-[20px] px-3">
         We know how important social media marketing is to every brand's well being. At the same time we also
@@ -282,12 +279,12 @@ export default function Home() {
 <div className="flex flex-col justify-between h-[250px] w-[400px] py-[10px]">
       <div className="flex gap-8 items-center h-[65px]">
           <Image 
-            src={tes_avatar}
+            src={profile}
             width={62}
             height={62}
             className="w-[62px] h-[62px] object-contain round"
             />
-         <div className="flex flex-row mr-2"><div className="h-1 w-[60px] bg-slate-500"></div><div className="h-1 w-[122px] bg-black"></div></div>
+         <div className="flex flex-row mr-2"><div className="h-1 w-[60px] bg-default"></div><div className="h-1 w-[122px] bg-black"></div></div>
      </div>
      <p>
             Ancor really takes our sales goals to heart. They are
@@ -299,12 +296,12 @@ export default function Home() {
   <div className="flex flex-col justify-between h-[250px] w-[400px] py-[10px]">
       <div className="flex gap-8 items-center h-[65px]">
           <Image 
-            src={tes_avatar1}
+            src={profile}
             width={62}
             height={62}
             className="w-[62px] h-[62px] object-contain round"
             />
-         <div className="flex flex-row mr-2"><div className="h-1 w-[60px] bg-slate-500"></div><div className="h-1 w-[122px] bg-black"></div></div>
+         <div className="flex flex-row mr-2"><div className="h-1 w-[60px] bg-default"></div><div className="h-1 w-[122px] bg-black"></div></div>
      </div>
      <p>
             We exceeded our fundraising goal and gained new donors and significantly increased awareness of our
@@ -316,12 +313,12 @@ export default function Home() {
   <div className="flex flex-col justify-between h-[250px] w-[400px] py-[10px]">
       <div className="flex gap-8 items-center h-[65px]">
           <Image 
-            src={tes_avatar2}
+            src={profile}
             width={62}
             height={62}
             className="w-[62px] h-[62px] object-contain round"
             />
-         <div className="flex flex-row mr-2"><div className="h-1 w-[60px] bg-slate-500"></div><div className="h-1 w-[122px] bg-black"></div></div>
+         <div className="flex flex-row mr-2"><div className="h-1 w-[60px] bg-default"></div><div className="h-1 w-[122px] bg-black"></div></div>
      </div>
      <p>
             Ancor was so easy to work with as they developed a realistic game plan
@@ -333,12 +330,12 @@ export default function Home() {
   <div className="flex flex-col justify-between h-[250px] w-[400px] py-[10px]">
       <div className="flex gap-8 items-center h-[65px]">
           <Image 
-            src={tes_avatar3}
+            src={profile}
             width={62}
             height={62}
             className="w-[62px] h-[62px] object-contain round"
             />
-         <div className="flex flex-row mr-2"><div className="h-1 w-[60px] bg-slate-500"></div><div className="h-1 w-[122px] bg-black"></div></div>
+         <div className="flex flex-row mr-2"><div className="h-1 w-[60px] bg-default"></div><div className="h-1 w-[122px] bg-black"></div></div>
      </div>
      <p>
             Ancor helped build our platform in it's earliest stage. They are truly the ones

@@ -14,6 +14,9 @@ module.exports = {
       },
       fontFamily: {
          'archivo-black' : ['archivo']
+      },
+      colors: {
+        default : '#998861'
       }
     },
   },

@@ -1,10 +1,10 @@
 export default function Contact () {
     return (
-        <div>
+        <div className="text-center text-[24px] my-[40%] ">
             <p>
-                Find Us: @ancoragency
-                Phone: +234 7035710986
-                Hours: 24hours 7days a week
+                Send us an Email: ancoragency@gmail.com<br/>
+                Phone us: +234 7035710986<br/>
+                we are open: 24hours 7days a week
             </p>
         </div>
     )
