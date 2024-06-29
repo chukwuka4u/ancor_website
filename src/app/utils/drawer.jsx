@@ -14,9 +14,10 @@ export default function Drawer ({ nav_list }) {
         <div>
         <button onClick={()=> setIsOpen(!isOpen)}>
         <Image 
+        alt=""
         src={isOpen ? close : icon}
-        width={45}
-        height={45}
+        width={35}
+        height={35}
         className="object-contain md:hidden py-2"
         />
         </button>

@@ -6,7 +6,7 @@ export default function OurServices () {
                 <h2 className="text-bold text-[28px]">Free Consultation</h2>
                 <p className="text-[20px]">
 
-                Here we have a form of meeting, through chat or video call where we talk about your business,
+                Here we have a meeting, through chat or video call where we talk about your business,
     what product or service your offer, your previous efforts
     to reach clients online and what existing online presence you have. We then tell you how we
     can solve your marketing problems giving you a practical idea of how the marketing campaign

@@ -30,6 +30,7 @@ const OwlCarousel = dynamic(() => import('react-owl-carousel'), {
           <div className="flex flex-col justify-between h-[250px] w-[400px] py-[10px]">
               <div className="flex gap-8 items-center h-[65px]">
                   <Image 
+                  alt=""
                     src={profile}
                     width={62}
                     height={62}
@@ -47,6 +48,7 @@ const OwlCarousel = dynamic(() => import('react-owl-carousel'), {
           <div className="flex flex-col justify-between h-[250px] w-[400px] py-[10px]">
               <div className="flex gap-8 items-center h-[65px]">
                   <Image 
+                  alt=""
                     src={profile}
                     width={62}
                     height={62}
@@ -64,6 +66,7 @@ const OwlCarousel = dynamic(() => import('react-owl-carousel'), {
           <div className="flex flex-col justify-between h-[250px] w-[400px] py-[10px]">
               <div className="flex gap-8 items-center h-[65px]">
                   <Image 
+                  alt=""
                     src={profile}
                     width={62}
                     height={62}
@@ -81,6 +84,7 @@ const OwlCarousel = dynamic(() => import('react-owl-carousel'), {
           <div className="flex flex-col justify-between h-[250px] w-[400px] py-[10px]">
               <div className="flex gap-8 items-center h-[65px]">
                   <Image 
+                  alt=""
                     src={profile}
                     width={62}
                     height={62}

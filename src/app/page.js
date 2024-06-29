@@ -31,6 +31,7 @@ export default function Home() {
       <div className="w-full h-screen">
         <div className="w-1/3 h-1/2 bg-default absolute top-0 right-0 mt-[50px] -z-20 lg:w-[300px] lg:h-[280px] lg:left-[10%]"></div>
         <Image
+          alt=""
           src={firstSectionImage}
           width={100}
           height={100}
@@ -38,13 +39,14 @@ export default function Home() {
         />
         
         <Image
+        alt=""
           src={firstSectionImage2}
           width={100}
           height={100}
           className=" w-2/3 h-screen mt-[50px] absolute top-0 left-0 object-cover -z-40 lg:w-[420px] lg:left-[35%]"
         />
         <div className="z-40 lg:pt-20">
-        <h1 className="text-[64px] text-center text-wrap tracking-tight mx-10 mt-12">We help <br className="lg:hidden"/> you <br className="lg:hidden"/> <span className="italic font-semibold">accomplish</span><br/> your <br className="lg:hidden"/> marketing <br className="lg:hidden"/><span className="italic font-semibold">goals</span></h1>
+        <h1 className="text-[54px] text-center text-wrap tracking-tight mx-10 mt-12">We help <br className="lg:hidden"/> you <br className="lg:hidden"/> <span className="italic font-semibold">accomplish</span><br/> your <br className="lg:hidden"/> marketing <br className="lg:hidden"/><span className="italic font-semibold">goals</span></h1>
         <Button link={"/our_services"}/> 
         </div>
       </div>
@@ -52,6 +54,7 @@ export default function Home() {
       <div className="mt-10 bg-black lg:flex pb-3 lg:flex-row lg:justify-between lg:my-[15%] lg:ml-[10%] lg:h-[50%]">
         <div className="w-full h-[70px] bg-default lg:w-[230px] lg:h-[50%]" ></div>
         <Image 
+        alt=""
             src={secondSectionImage}
             width={500}
             height={300}
@@ -84,6 +87,7 @@ export default function Home() {
       <div className="grid grid-rows-2 gap-1 grid-flow-col max-lg:hidden">
       <div className="w-[250px] h-[250px] flex flex-col justify-between m-5">
             <Image 
+            alt=""
               src={development}
               width={90}
               height={90}
@@ -99,6 +103,7 @@ export default function Home() {
           </div>
           <div className="w-[250px] h-[250px] self-end flex flex-col justify-between m-5">
             <Image 
+            alt=""
               src={marketing}
               width={90}
               height={90}
@@ -114,6 +119,7 @@ export default function Home() {
           </div>
           <div className="w-[250px] h-[250px] flex flex-col justify-between m-5">
             <Image 
+            alt=""
               src={innovation}
               width={90}
               height={90}
@@ -129,6 +135,7 @@ export default function Home() {
           </div>
           <div className="w-[250px] h-[250px] self-end flex flex-col justify-between m-5">
             <Image 
+            alt=""
               src={creativity}
               width={90}
               height={90}
@@ -145,7 +152,8 @@ export default function Home() {
       </div>
       <div className="flex flex-col lg:hidden">
           <div className="w-[250px] h-[250px] flex flex-col justify-between m-5">
-            <Image 
+            <Image
+            alt="" 
               src={development}
               width={90}
               height={90}
@@ -161,6 +169,7 @@ export default function Home() {
           </div>
           <div className="w-[250px] h-[250px] self-end flex flex-col justify-between m-5">
             <Image 
+            alt=""
               src={marketing}
               width={90}
               height={90}
@@ -176,6 +185,7 @@ export default function Home() {
           </div>
           <div className="w-[250px] h-[250px] flex flex-col justify-between m-5">
             <Image 
+            alt=""
               src={innovation}
               width={90}
               height={90}
@@ -190,7 +200,8 @@ export default function Home() {
             </p>
           </div>
           <div className="w-[250px] h-[250px] self-end flex flex-col justify-between m-5">
-            <Image 
+            <Image
+            alt="" 
               src={creativity}
               width={90}
               height={90}
@@ -207,6 +218,7 @@ export default function Home() {
       <div className="md:flex">
       <div className="w-full h-[184px] bg-black flex flex-row justify-between items-center mt-5 px-5 text-white md:w-[844px] md:h-[844px] md:flex-col md:px-0">
         <Image
+        alt=""
           src={frame_132}
           width={844}
           height={400}
@@ -253,6 +265,7 @@ export default function Home() {
                     know how difficult it can be to focus on strategy when you have sales to make. Let us anchor your business and help you reach vast amount of potential customers
           </p>
         <Image
+        alt=""
           src={frame_133}
           width={844}
           height={400}
@@ -261,15 +274,16 @@ export default function Home() {
       </div>
 
       </div>
-      <div className="w-full h-screen relative">
-        <Image 
+      <div className="w-full mb-8 relative">
+        <Image
+        alt="" 
         src={layer}
         width={400}
         height={400}
         className="w-full h-[400px] object-contain -z-1 lg:hidden"
         />
         {/* testimonials */}
-        <div className="absolute top-[1%] left-[23%] mx-auto lg:hidden">
+        <div className="absolute top-[1%] mx-3 lg:hidden">
            <Slider />
         </div>
         <div className="max-md:hidden">
@@ -279,6 +293,7 @@ export default function Home() {
 <div className="flex flex-col justify-between h-[250px] w-[400px] py-[10px]">
       <div className="flex gap-8 items-center h-[65px]">
           <Image 
+          alt=""
             src={profile}
             width={62}
             height={62}
@@ -296,6 +311,7 @@ export default function Home() {
   <div className="flex flex-col justify-between h-[250px] w-[400px] py-[10px]">
       <div className="flex gap-8 items-center h-[65px]">
           <Image 
+          alt=""
             src={profile}
             width={62}
             height={62}
@@ -313,6 +329,7 @@ export default function Home() {
   <div className="flex flex-col justify-between h-[250px] w-[400px] py-[10px]">
       <div className="flex gap-8 items-center h-[65px]">
           <Image 
+          alt=""
             src={profile}
             width={62}
             height={62}
@@ -330,6 +347,7 @@ export default function Home() {
   <div className="flex flex-col justify-between h-[250px] w-[400px] py-[10px]">
       <div className="flex gap-8 items-center h-[65px]">
           <Image 
+          alt=""
             src={profile}
             width={62}
             height={62}
@@ -346,37 +364,33 @@ export default function Home() {
 </div>
 
         </div>
-        <div>
-          <Image
-            src={partner_1}
-            width={120}
-            height={120}
-            className="pt-40 m-auto object-contain"
-          />
-        </div>
       </div>
       {/*footer */}
       <div className="w-full px-[15%]  bg-black">
           <div className="flex justify-between py-[80px]">
             <Image
+            alt=""
               src={linkedIn}
               width={20}
               height={20}
               className=""
             />
             <Image
+            alt=""
               src={facebook}
               width={20}
               height={20}
               className=""
             />
             <Image
+            alt=""
               src={twitter}
               width={20}
               height={20}
               className=""
             />
             <Image
+            alt=""
               src={instagram}
               width={20}
               height={20}
@@ -384,13 +398,9 @@ export default function Home() {
             />
           </div>
           <p className="text-white">Contact Us</p>
-          <p className="text-white">+234 7035710986<br /> ancoragency@gmail.com</p>
+          <p className="text-white">+234 7035710986<br /> ancormarketingagency@gmail.com</p>
           <div className="py-[50px]">
-            {/* <p className="text-white">JOIN OUR NEWSLETTER</p>
-            <div className="flex py-2 border border-white justify-between">
-              <input label="Your Email Address" className="bg-black "/>
-              <Image src={arrow_right} width={20} height={20} color="white"/>
-            </div> */}
+           
           </div>
       </div>
     </main>

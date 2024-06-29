@@ -9,6 +9,7 @@ const Button = ({link}) => {
             <div className="flex flex-row justify-center text-white text-[20px] h-[56px] w-[165px] bg-default text-center py-2 mt-12 mx-auto">
                 view more
                 <Image
+                alt=""
                     src={arrow_right}
                     width={20}
                     height={5}
