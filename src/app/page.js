@@ -29,21 +29,24 @@ export default function Home() {
         <Image
           alt=""
           src={landing_image}
-          width={300}
-          height={300}
-          className=" w-full h-[200px] my-20 object-contain -z-30 lg:absolute lg:top-[20%] lg:right-[20%] lg:w-[300px]"
+          width={200}
+          height={200}
+          className=" w-[250px] h-[30%] my-0 mx-auto object-contain -z-30 lg:absolute lg:top-[20%] lg:right-[20%] lg:w-[300px]"
         />
         
-        <div className="w-full mx-9">
-        <h1 className="text-[54px] max-sm:text-[30px] text-wrap tracking-tight"><span className="font-bold max-sm:text-[40px] text-[64px]"> We bring the clients,</span><br/> you deliver the service/product</h1>
-        <p className="text-[16px] font-light tracking-tight w-2/3">
+        <div className="w-full mx-5">
+        <h1 className="leading-tight text-[54px] max-sm:text-[30px] text-wrap tracking-tight"><span className="font-bold max-sm:text-[40px] text-[64px]"> We bring the clients,</span><br/> you deliver the service/product</h1>
+        <p className="leading-tight text-[16px] font-light tracking-tight w-2/3">
           We provide Expert Social Media Marketing solutions for your Brand. <br/>
           Combining our Experience and our passion for results. <br/>
           We get the job done Efficiently and Creatively.
         </p>
         <Button link={"/our_services"}/> 
-        <p>simply email us: <span className="text-[30px]">advertiseeagency@gmail.com</span><br/> 
-          to get started
+        <p>simply email us:
+        </p>
+        <p className="text-[30px] max-md:text-[20px] text-wrap w-2/3 overflow-none">advertiseeagency@gmail.com
+        </p>
+        <p >to get started
         </p>
         </div>
       </div>
