@@ -1,8 +1,27 @@
+import Image from "next/image"
+
+import consultation from "../assets/consultation.png"
+import seo from "../assets/seo.png"
+import marketing from "../assets/marketing.png"
+import development from "../assets/development.png"
+import product_dev from "../assets/product_dev.png"
+export 
+const metadata = {
+  title: "Our Services - Advertisee",
+  description: "Advertisee - the Home of social media marketing",
+};
 export default function OurServices () {
     return (
         <div className="text-center">
             <h1 className="text-bold text-[60px] text-slate-700 my-10">Our Services</h1>
             <div className="m-5">
+            <Image
+          alt=""
+          src={consultation}
+          width={300}
+          height={300}
+          className=" w-full h-[200px] my-20 object-contain -z-30  "
+        />
                 <h2 className="text-bold text-[28px]">Free Consultation</h2>
                 <p className="text-[20px]">
 
@@ -14,6 +33,13 @@ export default function OurServices () {
                 </p>
             </div>
             <div className="m-5">
+            <Image
+          alt=""
+          src={seo}
+          width={300}
+          height={300}
+          className=" w-full h-[200px] my-20 object-contain -z-30  "
+        />
                 <h2 className="text-bold text-[28px]">Search Engine Optimization</h2>
                 <p className="text-[20px]">
                 Here we use our marketing strategies to get you better search engine views, so whenever a person searchs
@@ -22,6 +48,13 @@ export default function OurServices () {
                 </p>
             </div>
             <div className="m-5">
+            <Image
+          alt=""
+          src={marketing}
+          width={300}
+          height={300}
+          className=" w-full h-[200px] my-20 object-contain -z-30  "
+        />
                 <h2 className="text-bold text-[28px]">Social Media Advertising</h2>
                 <p className="text-[20px]">
                 Here we use social media platforms to draw traffic to your business site. By using picture and video ads
@@ -30,6 +63,13 @@ export default function OurServices () {
                 </p>
             </div>
             <div className="m-5">
+            <Image
+          alt=""
+          src={development}
+          width={300}
+          height={300}
+          className=" w-full h-[200px] my-20 object-contain -z-30  "
+        />
                 <h2 className="text-bold text-[28px]">Business Site development</h2>
                 <p className="text-[20px]">
                 A business Site is very important for any business trying to get customers online. This is where customers
@@ -38,17 +78,19 @@ export default function OurServices () {
                 </p>
             </div>
             <div className="m-5">
+            <Image
+          alt=""
+          src={product_dev}
+          width={300}
+          height={300}
+          className=" w-full h-[200px] my-20 object-contain -z-30  "
+        />
                 <h2 className="text-bold text-[28px]">Software product development</h2>
                 <p className="text-[20px]">
                 Here we lend our resources to businesses who wish to build software products like ecommerce or fintech apps and 
     websites. We lend our developers and designers to get the best product for you, all you have to do is focus on
     your idea and growth. Good for startups who are having difficulty getting developers for their business.
                 </p>
-            </div>
-            <div className="flex flex-row justify-center text-white text-[20px] h-[56px] w-[300px] bg-slate-500 text-center p-2 mt-12 mx-auto">
-                <a href="https://drive.google.com/uc?export=download&id=15DQsygHfzYGsVUxVlZET-vNlgUuGrFYH">
-                    Download budget planner
-                </a>
             </div>
         </div>
     )

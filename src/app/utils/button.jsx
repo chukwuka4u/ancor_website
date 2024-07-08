@@ -6,8 +6,8 @@ import arrow_right from "../assets/fi_arrow-right.png"
 const Button = ({link}) => {
     return(
         <Link href={link}>
-            <div className="flex flex-row justify-center text-white text-[20px] h-[56px] w-[165px] bg-default text-center py-2 mt-12 mx-auto">
-                view more
+            <div className="flex flex-row justify-center text-white text-[20px] h-[56px] w-[165px] bg-default text-center py-2 mt-12">
+                 learn more
                 <Image
                 alt=""
                     src={arrow_right}

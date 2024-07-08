@@ -27,7 +27,7 @@ export default function Drawer ({ nav_list }) {
                      <div className="absolute top-[50px] right-0 w-[100%] h-full bg-transparent z-2">
                      </div>
                   </button>
-                  <div className="absolute top-[50px] right-0 w-[80%] h-[500px] bg-white z-4">
+                  <div className="absolute top-[50px] right-0 w-[80%] h-[300px] bg-default pl-2 z-4">
                <ls className="flex flex-col items-stretch">
                    <Link href={nav_list[0]}>
                    <ul className="hover:bg-slate-200 focus:ring-2 focus:ring-slate-500 py-3" onFocus={() => {setIsOpen(false)}}>

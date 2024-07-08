@@ -1,20 +1,13 @@
 import Image from "next/image";
 import Button from "./utils/button.jsx";
 
-import arrow_right from "./assets/fi_arrow-right.png"
-import firstSectionImage from "./assets/first_section_img.png"
-import firstSectionImage2 from "./assets/first_section_img_2.png"
-import secondSectionImage from "./assets/second_section_img.png"
+import landing_image from "./assets/landing_image.png"
+import goals from "./assets/goals.jpg"
 import development from "./assets/development.png"
 import marketing from "./assets/marketing.png"
 import innovation from "./assets/innovation.png"
 import creativity from "./assets/creativity.png"
 import layer from "./assets/layer.png"
-import partner_1 from "./assets/partner_1.png"
-import partner_2 from "./assets/partner_2.png"
-import partner_3 from "./assets/partner_3.png"
-import partner_4 from "./assets/partner_4.png"
-import partner_5 from "./assets/partner_5.png"
 import linkedIn from "./assets/linkedIn.png"
 import facebook from "./assets/facebook.png"
 import twitter from "./assets/twitter.png"
@@ -29,33 +22,37 @@ export default function Home() {
     <main className="select-none">
       
       <div className="w-full h-screen">
-        <div className="w-1/3 h-1/2 bg-default absolute top-0 right-0 mt-[50px] -z-20 lg:w-[300px] lg:h-[280px] lg:left-[10%]"></div>
+        <div className="w-1/4 h-1/4 bg-default absolute top-0 right-0 mt-[50px] -z-20 lg:w-[300px] lg:h-[280px] lg:left-[10%]"></div>
+        <div className="w-1/3 h-2/3 bg-default absolute top-0 left-0 mt-[50px] -z-20 lg:w-[300px] lg:h-[280px] lg:left-[10%]"></div>
+        <div className="w-1/4 h-1/4 bg-default absolute bottom-0 left-0 mt-[50px] -z-20 lg:w-[300px] lg:h-[280px] lg:left-[10%]"></div>
+        <div className="w-1/3 h-1/3 bg-default absolute bottom-0 right-0 mt-[50px] -z-20 lg:w-[300px] lg:h-[280px] lg:left-[10%]"></div>
         <Image
           alt=""
-          src={firstSectionImage}
-          width={100}
-          height={100}
-          className=" w-1/3 h-1/2 mb-[-50px] absolute bottom-0 right-0 object-cover -z-30 lg:w-[300px] lg:h-[280px] lg:right-[10%]"
+          src={landing_image}
+          width={300}
+          height={300}
+          className=" w-full h-[200px] my-20 object-contain -z-30 lg:absolute lg:top-[20%] lg:right-[20%] lg:w-[300px]"
         />
         
-        <Image
-        alt=""
-          src={firstSectionImage2}
-          width={100}
-          height={100}
-          className=" w-2/3 h-screen mt-[50px] absolute top-0 left-0 object-cover -z-40 lg:w-[420px] lg:left-[35%]"
-        />
-        <div className="z-40 lg:pt-20">
-        <h1 className="text-[54px] text-center text-wrap tracking-tight mx-10 mt-12">We help <br className="lg:hidden"/> you <br className="lg:hidden"/> <span className="italic font-semibold">accomplish</span><br/> your <br className="lg:hidden"/> marketing <br className="lg:hidden"/><span className="italic font-semibold">goals</span></h1>
+        <div className="w-full mx-9">
+        <h1 className="text-[54px] max-sm:text-[30px] text-wrap tracking-tight"><span className="font-bold max-sm:text-[40px] text-[64px]"> We bring the clients,</span><br/> you deliver the service/product</h1>
+        <p className="text-[16px] font-light tracking-tight w-2/3">
+          We provide Expert Social Media Marketing solutions for your Brand. <br/>
+          Combining our Experience and our passion for results. <br/>
+          We get the job done Efficiently and Creatively.
+        </p>
         <Button link={"/our_services"}/> 
+        <p>simply email us: <span className="text-[30px]">advertiseeagency@gmail.com</span><br/> 
+          to get started
+        </p>
         </div>
       </div>
 
-      <div className="mt-10 bg-black lg:flex pb-3 lg:flex-row lg:justify-between lg:my-[15%] lg:ml-[10%] lg:h-[50%]">
+      <div className="bg-black lg:flex pb-3 lg:flex-row lg:justify-between lg:my-[15%] lg:ml-[10%] lg:h-[50%]">
         <div className="w-full h-[70px] bg-default lg:w-[230px] lg:h-[50%]" ></div>
         <Image 
         alt=""
-            src={secondSectionImage}
+            src={goals}
             width={500}
             height={300}
             className="w-full h-[300px] object-cover lg:my-[5%] lg:-ml-[30%] lg:mr-5 lg:w-[500px]"
@@ -76,7 +73,7 @@ export default function Home() {
       <div className="bg-default lg:w-[150px] lg:h-auto" ></div>
       </div>
       <div className="lg:flex p-auto">
-      <div className="h-[400px] bg-white px-3">
+      <div className="h-[300px] bg-white px-3">
       <div className=" flex flex-row pt-10 px-3">
           <div className="flex flex-row mr-2 pt-4"><div className="h-1 w-[50px] bg-default"></div><div className="h-1 w-[20px] bg-black"></div></div>
           <h1 className="font-mono tracking-loose text-[25px] ml-10 pb-5">OUR SERVICES</h1>
@@ -151,12 +148,12 @@ export default function Home() {
       </div>
       </div>
       <div className="flex flex-col lg:hidden">
-          <div className="w-[250px] h-[250px] flex flex-col justify-between m-5">
+          <div className="w-[250px] flex flex-col justify-between m-5">
             <Image
             alt="" 
               src={development}
-              width={90}
-              height={90}
+              width={180}
+              height={180}
               className="object-contain"
             />
             <h1 className="text-[20px]">
@@ -167,12 +164,12 @@ export default function Home() {
             of expert developers can also aid in building your software products up to excellent quality.
             </p>
           </div>
-          <div className="w-[250px] h-[250px] self-end flex flex-col justify-between m-5">
+          <div className="w-[250px] self-end flex flex-col justify-between m-5">
             <Image 
             alt=""
               src={marketing}
-              width={90}
-              height={90}
+              width={180}
+              height={180}
               className="object-contain"
             />
             <h1 className="text-[20px]">
@@ -183,12 +180,12 @@ export default function Home() {
             platforms, made on evidence-based results.
             </p>
           </div>
-          <div className="w-[250px] h-[250px] flex flex-col justify-between m-5">
+          <div className="w-[250px] flex flex-col justify-between m-5">
             <Image 
             alt=""
               src={innovation}
-              width={90}
-              height={90}
+              width={180}
+              height={180}
               className="object-contain"
             />
             <h1 className="text-[20px]">
@@ -199,12 +196,12 @@ export default function Home() {
             through internal and external environment analysis
             </p>
           </div>
-          <div className="w-[250px] h-[250px] self-end flex flex-col justify-between m-5">
+          <div className="w-[250px] self-end flex flex-col justify-between m-5">
             <Image
             alt="" 
               src={creativity}
-              width={90}
-              height={90}
+              width={180}
+              height={180}
               className="object-contain"
             />
             <h1 className="text-[20px]">
@@ -226,7 +223,7 @@ export default function Home() {
         />
         <div className="md:flex md:justify-between md:mx-5">
          <div className="md:flex md:flex-col md:items-center md:justify-center">
-          <h1 className="text-[50px] font-mono font-light text-default">34</h1>
+          <h1 className="text-[50px] font-mono font-light text-default">0</h1>
           <h1 className="text-[16px] font-mono font-medium">CLIENTS</h1>
          </div>
           <div className="max-md:hidden flex justify-between">
@@ -238,7 +235,7 @@ export default function Home() {
         </div>
         <div className=" md:flex md:justify-between md:mx-5">
          <div className="md:flex md:flex-col md:items-center md:justify-center">
-          <h1 className="text-[50px] font-mono font-light text-default">23</h1>
+          <h1 className="text-[50px] font-mono font-light text-default">0</h1>
           <h1 className="text-[16px] font-mono font-medium">DEALS</h1>
          </div>
          <div className="max-md:hidden flex justify-between">
@@ -248,7 +245,7 @@ export default function Home() {
         </div>
         <div className=" md:flex md:justify-between md:mx-5">
          <div className="md:flex md:flex-col md:items-center md:justify-center">
-          <h1 className="text-[50px] font-mono font-light text-default">58</h1>
+          <h1 className="text-[50px] font-mono font-light text-default">1</h1>
           <h1 className="text-[16px] font-mono font-medium">SITES</h1>
          </div>
          <div className="max-md:hidden flex justify-between">
@@ -259,7 +256,7 @@ export default function Home() {
        
       </div>
       <div className="max-md:hidden bg-default text-white w-[844px] h-[744px] flex flex-col justify-between">
-        <h1 className="font-extralight text-[40px] px-3">Let us ancor your business</h1>
+        <h1 className="font-extralight text-[40px] px-3">Let us advertise your business</h1>
         <p className="font-light text-[20px] px-3">
         We know how important social media marketing is to every brand's well being. At the same time we also
                     know how difficult it can be to focus on strategy when you have sales to make. Let us anchor your business and help you reach vast amount of potential customers
@@ -283,7 +280,7 @@ export default function Home() {
         className="w-full h-[400px] object-contain -z-1 lg:hidden"
         />
         {/* testimonials */}
-        <div className="absolute top-[1%] mx-3 lg:hidden">
+        <div className="absolute top-[1%] lg:hidden">
            <Slider />
         </div>
         <div className="max-md:hidden">
@@ -302,7 +299,7 @@ export default function Home() {
          <div className="flex flex-row mr-2"><div className="h-1 w-[60px] bg-default"></div><div className="h-1 w-[122px] bg-black"></div></div>
      </div>
      <p>
-            Ancor really takes our sales goals to heart. They are
+            Advertisee really takes our sales goals to heart. They are
             excellent at using their ability to work towards our goals
             of increased sales and brand awareness
             </p>
@@ -338,7 +335,7 @@ export default function Home() {
          <div className="flex flex-row mr-2"><div className="h-1 w-[60px] bg-default"></div><div className="h-1 w-[122px] bg-black"></div></div>
      </div>
      <p>
-            Ancor was so easy to work with as they developed a realistic game plan
+            Advertisee was so easy to work with as they developed a realistic game plan
             and provided a suitable roadmap to achieve our objectives. we saw
             immediate results on our online sales.
           </p>
@@ -356,7 +353,7 @@ export default function Home() {
          <div className="flex flex-row mr-2"><div className="h-1 w-[60px] bg-default"></div><div className="h-1 w-[122px] bg-black"></div></div>
      </div>
      <p>
-            Ancor helped build our platform in it's earliest stage. They are truly the ones
+            Advertisee helped build our platform in it's earliest stage. They are truly the ones
             behind our company's success.
           </p>
           <h1>FLEXSTORE - US</h1>
@@ -398,9 +395,9 @@ export default function Home() {
             />
           </div>
           <p className="text-white">Contact Us</p>
-          <p className="text-white">+234 7035710986<br /> ancormarketingagency@gmail.com</p>
+          <p className="text-white">+234 7035710986<br /> advertiseeagency@gmail.com</p>
           <div className="py-[50px]">
-           
+           <p className="text-white">illustrations by: Streamline</p>
           </div>
       </div>
     </main>
